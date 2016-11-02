@@ -1,16 +1,15 @@
 {
-    // Host to edit files on
-    // "host": "sts@DebianAVHS"
-    "host": "sts@exploratory5-avhs1.vhslab.rnd.axis.com",
-
+    // Hosts to edit files on
+    "hosts": [
+        "user@myhost1",
+        "user@myhost2"
+    ],
     // mapping for files to be copied:
     // Example:
     // "/path/to/file/on/computer" : "/absolute/path/to/file/on/server",
     // "C:/git/websites/example/" : "/var/www/htdocs/example/"
     "path_mapping": {
-        "/home/rickardh/repos/avhsportal/avhs/webgui": "~/current/web/webgui/",
-        "/home/rickardh/repos/avhsportal/avhs/portal": "~/current/",
-        "/home/rickardh/repos/avhsportal/avhs/portal/apps/helpers": "~/current/bin/",
-        "/home/rickardh/repos/webgrind": "~/current/web/webgrind/"
+        "/home/repos/webgui": "/var/www/html/webgui/",
+        "/home/repos/myproject/": "/var/www/html/current/"
     },
 }
